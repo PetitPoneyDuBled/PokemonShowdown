@@ -18,3 +18,9 @@ http://localhost:8080/PokemonShowdown/test.php
 PRE-REQUIS
 
 Il faudra installer tout d'abord un docker :
+  
+  Pour installer un docker, je vous conseille de suivre le github suivant que j'ai moi même suivi (faire ces commandes dans le terminal du dossier) :
+  https://github.com/ttcchhmm/docker-lamp/
+  (Pendant l'installation, il est possible que vous n'ayez pas tout les droits, dans ce cas faire les commandes avec sudo devant)
+  
+  
