@@ -1,0 +1,16 @@
+- Faire le diagramme UML des pokémon et d'une équipe :
+- Faire le diagramme de logique du fonctionnement d'un combat pokémon
+- Créer la base de donnée (je vais tout d'abord créer que 3-9 pokémon juste pour vérifier la fonctionnalité du diagramme)
+- S'initier à laravel pour commencer à faire du PHP ainsi que du JS (le js sera fait après avec peut-être un autre framework)
+    
+    Pour laravel : 
+        -D'abord, j'aimerai pouvoir afficher un pokémon(Choisi à l'avance) à l'écran (image sans animation) avec affichage des statistiques (en mettant la souris sur le pokémon) et affichage des attaques
+        
+        -J'aimerai ensuite pouvoir en afficher 2 (faire l'arène de combat côté graphique)
+        
+        -Créer l'algorithme d'affrontement ( Donc, perte de dégats (en fonction des statistiques, utilisation des attaques et des objets, le faite que ce soit du tour par tour, créer le principe de tour par tour, condition de victoire, pour l'instant je considère que je joue seul (comme jouer au monopoly tout seul).
+        
+        -Pouvoir faire un affrontement, avec une équipe pokémon contre équipe pokémon (Donc, gestion d'une équipe, condition de mort d'un pokémon ...)
+        
+        -Créer une interface "pokemonMaker" qui permet de créer une équipe de pokémon et de la conserver pour se battre
+        
