@@ -31,7 +31,7 @@ LANCER LE SITE WEB
 
 Avoir l'application pokémon :
 
-  Télécharger mon application de mon github : "pokemon-app"
+  Télécharger mon application de mon github : "pokemon-app.zip"
   Une fois téléchargé, désarchiver et placer le dossier dans votre espace personnel de travail
   Lancer le docker (l'application pokémon) via le terminal de votre dossier (à la racine) :
   $ ./vendor/bin/sail up
