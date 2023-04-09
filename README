@@ -1,26 +1,49 @@
-Taquin (PHP/JS/HTML/CSS)
+PokemonShowdown (PHP/JS/HTML/CSS)
 
 Le but de ce projet est de reproduire le site communautaire "pokémonShowdown" : https://play.pokemonshowdown.com/ en utilisant les concepts vue en cours de licence ainsi que l'utilisation du framework "Laravel"
 
 POUR COMMENCER
 
-Mon site internet n'est pas pour l'instant mis en ligne mais pour pouvoir l'afficher via un navigateur web, il vous faudra tout d'abord installer les pré-requis. Une fois correctement installé sur votre ordinateur, vous pourrez lancer votre docker en ouvrant la console dans la racine de votre docker et effectuer ces commandes :
-$ sudo service docker start
-$ composer dump-autoload
-$ docker-compose up -d
+Mon site internet n'est pas pour l'instant mis en ligne mais pour pouvoir l'afficher via un navigateur web, il vous faudra tout d'abord installer les pré-requis. Une fois correctement installé sur votre ordinateur, vous pourrez lancer votre docker en ouvrant le terminal dans la racine de votre docker et effectuer cette commande :
+$ ./vendor/bin/sail up
 
 Dans votre navigateur web, votre docker s'ouvre à cette endroit la :
 http://localhost:8080/
-
-Donc, si vous avez mis mon dossier pokemonShowdown à la racine de votre dossier files, vous pourrez ouvrir les éléments qui sont dedans avec ce lien (le lien renvoie vers une page php qui sert d'exemple pour voir si avez le bon chemin d'ouvert dans votre navigateur, si, il est affiché "ça fonctionne" alors c'est que vous êtes dans le bon chemin) :
-http://localhost:8080/PokemonShowdown/test.php
 
 PRE-REQUIS
 
 Il faudra installer tout d'abord un docker :
   
-  Pour installer un docker, je vous conseille de suivre le github suivant que j'ai moi même suivi (faire ces commandes dans le terminal du dossier) :
-  https://github.com/ttcchhmm/docker-lamp/
-  (Pendant l'installation, il est possible que vous n'ayez pas tout les droits, dans ce cas faire les commandes avec sudo devant)
+  Pour installer un docker, il faudra d'abord installer composer ainsi que les dépendance requises pour laravel sur votre ordinateur via ces commandes :
+  $ sudo apt update && sudo apt upgrade
+  $ sudo apt install php php-common php-cli php-mbstring php-xml php-zip unzip
+  $ cd ~
+curl -sS https://getcomposer.org/installer -o composer-setup.php
+sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+  $ sudo apt install php-curl
+
+Maintenant, vous pourrez installer laravel sur votre ordinateur : 
+  $ composer global require laravel/installer
+  $ echo 'export PATH="$PATH:$HOME/.config/composer/vendor/bin"' >> ~/.bashrc
+  $ source ~/.bashrc
   
+LANCER LE SITE WEB
+
+Avoir l'application pokémon :
+
+  Télécharger mon application de mon github : "pokemon-app"
+  Une fois téléchargé, désarchiver et placer le dossier dans votre espace personnel de travail
+  Lancer le docker (l'application pokémon) via le terminal de votre dossier (à la racine) :
+  $ ./vendor/bin/sail up
+  
+#Test pour voir si tout fonctionne bien :
+  #Lancer via un navigateur web le site web suivant :
+  #http://localhost:8080/
+  #Une page de documentation laravel devrait s'afficher si tout fonctionne bien
+  (Vous noterez que normalement, on lance un projet laravel via le port "80" mais je l'ai modifié pour le "8080" dans le fichier.yml car j'ai d'autre serveur web sur mon ordinateur)
+  
+
+N'hésitez pas à vous documenter sur le site laravel pour mieux comprendre ce framework ainsi que son installation :
+https://laravel.com/docs/10.x
+
   
