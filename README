@@ -33,13 +33,15 @@ Avoir l'application pokémon :
 
   Télécharger mon application de mon github : "pokemon-app.zip"
   Une fois téléchargé, désarchiver et placer le dossier dans votre espace personnel de travail
-  Lancer le docker (l'application pokémon) via le terminal de votre dossier (à la racine) :
-  $ ./vendor/bin/sail up
   
-#Test pour voir si tout fonctionne bien :
-  #Lancer via un navigateur web le site web suivant :
-  #http://localhost:8080/
-  #Une page de documentation laravel devrait s'afficher si tout fonctionne bien
+Lancer le docker (l'application pokémon) via le terminal de votre dossier (à la racine) :
+  
+  $ ./vendor/bin/sail up
+
+Test pour voir si tout fonctionne bien :
+  Lancer via un navigateur web le site web suivant :
+  http://localhost:8080/
+  Une page de documentation laravel devrait s'afficher si tout fonctionne bien
   (Vous noterez que normalement, on lance un projet laravel via le port "80" mais je l'ai modifié pour le "8080" dans le fichier.yml car j'ai d'autre serveur web sur mon ordinateur)
   
 
