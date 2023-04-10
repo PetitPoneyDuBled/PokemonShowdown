@@ -22,7 +22,10 @@ curl -sS https://getcomposer.org/installer -o composer-setup.php
 sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
   $ sudo apt install php-curl
 
-Maintenant, vous pourrez installer laravel sur votre ordinateur : 
+  Maintenant, vous pouvez installer docker sur votre pc :
+  $ sudo apt install docker.io
+  
+  Maintenant, vous pourrez installer laravel sur votre ordinateur : 
   $ composer global require laravel/installer
   $ echo 'export PATH="$PATH:$HOME/.config/composer/vendor/bin"' >> ~/.bashrc
   $ source ~/.bashrc
