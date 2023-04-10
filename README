@@ -24,6 +24,8 @@ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 
   Maintenant, vous pouvez installer docker sur votre pc :
   $ sudo apt install docker.io
+  (Vous devtre probablement ajouter votre utilisateur au groupe docker)
+  $ sudo usermod -aG docker ${USER}
   
   Maintenant, vous pourrez installer laravel sur votre ordinateur : 
   $ composer global require laravel/installer
