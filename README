@@ -48,7 +48,7 @@ Test pour voir si tout fonctionne bien :
   http://localhost:8080/
   Une page de documentation laravel devrait s'afficher si tout fonctionne bien
   (Vous noterez que normalement, on lance un projet laravel via le port "80" mais je l'ai modifié pour le "8080" dans le fichier.yml car j'ai d'autre serveur web sur mon ordinateur)
-  (Egalement, vous pourrez accéder à phpmyadmin via le port 8181, donc l'url : http://localhost:8181/ )
+  (Egalement, vous pourrez accéder à phpmyadmin via le port 8181, donc l'url : http://localhost:8181/ (pas besoin de nom de serveur , identifiant : sail , mot de passe : password))
   (Enfin, toute modification de l'utilisation de laravel est dûe au changement que j'ai effectué au docker, donc n'hésiter pas à voir le fichier .yml pour comprendre les changements)
 
 N'hésitez pas à vous documenter sur le site laravel pour mieux comprendre ce framework ainsi que son installation :
