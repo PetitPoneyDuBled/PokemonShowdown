@@ -31,12 +31,29 @@ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
   $ composer global require laravel/installer
   $ echo 'export PATH="$PATH:$HOME/.config/composer/vendor/bin"' >> ~/.bashrc
   $ source ~/.bashrc
+ 
+IMPLEMENTER LA BASE DE DONNEE:
+
+Pour que le site web fonctionne bien, il faudra que vous implémentiez la base de donnée :
+(Or, j'ai utilisé mariadb/phpmyadmin pour ce projet laravel ce qui n'est pas l'installation par défaut). 
+
+  Tout d'abord, il faut utiliser sail qui sert à gérer la gestion de l'environnement de laravel :
+  $ composer require laravel/sail --dev
   
+  Ensuite installer mariadb([2]), phpmyadmin et générer le fichier .yml dans votre projet laravel :
+  $ php artisan sail:install
+  (Normalement, pour phpmyadmin si vous avez télécharger mon projet, il sera implémenter dans le fichier .yml)
+  (De même la gestion des connexions est déjà régler dans le .env du projet)
+  
+  Aller sur phpmyadmin (identifiant : "sail", mot de passe : "password") et créer une base de donnée pokemon_db et implémenter les tables de pokemon.sql dans la base de donnée.
+  (Notez qu'il est possible que sail n'est pas les droits de modifier ou d'utiliser votre base de données pour modifier ces droits, veuillez vous connecter à phpmyadmin en tant que root (mot de passe : password) et aller dans la gestion des utilisateurs donner tous les droits à sail)
+
+
 LANCER LE SITE WEB
 
 Avoir l'application pokémon :
 
-  Télécharger mon application de mon github : "pokemon-app.zip"
+  Télécharger mon application de mon github : "pokemon-app3.zip"
   Une fois téléchargé, désarchiver et placer le dossier dans votre espace personnel de travail
   
 Lancer le docker (l'application pokémon) via le terminal de votre dossier (à la racine) :
@@ -48,29 +65,13 @@ Test pour voir si tout fonctionne bien :
   http://localhost:8080/
   Une page de documentation laravel devrait s'afficher si tout fonctionne bien
   (Vous noterez que normalement, on lance un projet laravel via le port "80" mais je l'ai modifié pour le "8080" dans le fichier.yml car j'ai d'autre serveur web sur mon ordinateur)
-  (Egalement, vous pourrez accéder à phpmyadmin via le port 8181, donc l'url : http://localhost:8081/ (pas besoin de nom de serveur , identifiant : sail , mot de passe : password))
+  (Egalement, vous pourrez accéder à phpmyadmin via le port 8081, donc l'url : http://localhost:8081/ (pas besoin de nom de serveur , identifiant : sail , mot de passe : password))
   (Enfin, toute modification de l'utilisation de laravel est dûe au changement que j'ai effectué au docker, donc n'hésiter pas à voir le fichier .yml pour comprendre les changements)
 
-BASE DE DONNEES
+RECHERCHE
 
-Comme on a travaillé sous phpmyadmin, j'ai voulu implanter celui-ci dans mon docker, or ce n'est pas l'installation par défaut de laravel.
-Pour ce faire j'ai du créer un fichier .yml à la création du projet laravel
 Commande que j'ai utilisé pour créer le projet :
 $ composer create-project laravel/laravel pokemon-app3
-
-J'ai ensuite du utiliser sail qui sert à gérer la gestion de l'environnement de laravel :
-$ composer require laravel/sail --dev
-
-Comme je l'ai dit précedemment, je voulais que la gestion de mes base de données se fassent avec phpmyadmin, or pour phpmyadmin, il faut avoir mariadb et il faut que j'inclue les 2 dans un fichier .yml car mon projet et sous docker, j'ai donc fais cette commande pour générer un fichier .yml et installer mariadb (via [2]):
-$ php artisan sail:install
-
-Donc, pour l'instant je n'ai que le service mariadb d'installé, il me fallait phpmyadmin, j'ai donc rajouté dans mon fichier .yml phpmyadmin (il sera directement bien écrit dans le fichier .yml)
-
-Maintenant que phpmyadmin, est utilisable, il faut que mon projet laravel puisse récupérer les données, j'ai donc du changer les données du .env (qui sont déjà changés dans le dossier télécharger)
-
-Enfin, pour que mon code soit fonctionnel, vous devrez créer une table pokemon_db dans phpmyadmin (localhost:8081) et insérer les tables et données du fichier pokemon.sql dedans.
-
-(Notez qu'il est possible que sail n'est pas les droits de modifier ou d'utiliser votre base de données pour modifier ces droits, veuillez vous connecter à phpmyadmin en tant que root (mot de passe : password) et aller dans la gestion des utilisateurs donner tous les droits à sail)
 
 
 N'hésitez pas à vous documenter sur le site laravel pour mieux comprendre ce framework ainsi que son installation :
