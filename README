@@ -34,6 +34,11 @@ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
  
 IMPLEMENTER LA BASE DE DONNEE:
 
+Tout d'abord il vous faut avoir l'application pokémon :
+
+  Télécharger mon application de mon github : "pokemon-app3.zip"
+  Une fois téléchargé, désarchiver et placer le dossier dans votre espace personnel de travail
+  
 Pour que le site web fonctionne bien, il faudra que vous implémentiez la base de donnée :
 (Or, j'ai utilisé mariadb/phpmyadmin pour ce projet laravel ce qui n'est pas l'installation par défaut). 
 
@@ -45,16 +50,12 @@ Pour que le site web fonctionne bien, il faudra que vous implémentiez la base d
   (Normalement, pour phpmyadmin si vous avez télécharger mon projet, il sera implémenter dans le fichier .yml)
   (De même la gestion des connexions est déjà régler dans le .env du projet)
   
-  Aller sur phpmyadmin (identifiant : "sail", mot de passe : "password") et créer une base de donnée pokemon_db et implémenter les tables de pokemon.sql dans la base de donnée.
-  (Notez qu'il est possible que sail n'est pas les droits de modifier ou d'utiliser votre base de données pour modifier ces droits, veuillez vous connecter à phpmyadmin en tant que root (mot de passe : password) et aller dans la gestion des utilisateurs donner tous les droits à sail)
-
+  Aller sur phpmyadmin (identifiant : "sail", mot de passe : "password")
+  localhost:80881
+  Créer une base de donnée pokemon_db et implémenter les tables de pokemon.sql dans la base de donnée.
+  (Notez qu'il est possible que sail n'est pas les droits de modifier ou d'utiliser votre base de données pour modifier ces droits, veuillez-vous connecter à phpmyadmin en tant que root (mot de passe : "password") et aller dans la gestion des utilisateurs et donner tout les droits à sail)
 
 LANCER LE SITE WEB
-
-Avoir l'application pokémon :
-
-  Télécharger mon application de mon github : "pokemon-app3.zip"
-  Une fois téléchargé, désarchiver et placer le dossier dans votre espace personnel de travail
   
 Lancer le docker (l'application pokémon) via le terminal de votre dossier (à la racine) :
   
