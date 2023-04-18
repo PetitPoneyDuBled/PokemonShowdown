@@ -74,6 +74,19 @@ RECHERCHE
 Commande que j'ai utilisé pour créer le projet :
 $ composer create-project laravel/laravel pokemon-app3
 
+EXPLICATION DES PAGES 
+
+La 1er page (Le menu) :
+Répresente la liste des pokémons de la base de données avec leurs statistiques.
+
+La 2ème page (Combat1) :
+M'a permis de faire de savoir comment utiliser un objet de façon très simplifier via laravel, d'utiliser du javascript très simple mais également de comprendre comment utiliser une navbar.
+
+La 3ème page (Combat2) :
+M'a permis de comprendre l'utilisation des formulaires (post) sous laravel.
+
+
+
 
 N'hésitez pas à vous documenter sur le site laravel pour mieux comprendre ce framework ainsi que son installation :
 https://laravel.com/docs/10.x
