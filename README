@@ -52,7 +52,7 @@ Pour que le site web fonctionne bien, il faudra que vous implémentiez la base d
   
   Aller sur phpmyadmin (identifiant : "sail", mot de passe : "password")
   localhost:80881
-  Créer une base de donnée pokemon_db et implémenter les tables de pokemon.sql dans la base de donnée.
+  Créer une base de donnée pokemon_db et implémenter les tables de pokemon_db.sql dans la base de donnée.
   (Notez qu'il est possible que sail n'est pas les droits de modifier ou d'utiliser votre base de données pour modifier ces droits, veuillez-vous connecter à phpmyadmin en tant que root (mot de passe : "password") et aller dans la gestion des utilisateurs et donner tout les droits à sail)
 
 LANCER LE SITE WEB
