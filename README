@@ -74,6 +74,9 @@ RECHERCHE
 Commande que j'ai utilisé pour créer le projet :
 $ composer create-project laravel/laravel pokemon-app3
 
+Création d'une classe
+$ php artisan make:model Type
+
 EXPLICATION DES PAGES 
 
 La 1er page (Le menu) :
