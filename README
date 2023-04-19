@@ -91,8 +91,11 @@ C'est une page qui vous propose de faire un choix d'un pokémon parmi ceux dans 
 
 La 4ème page (Liste pokemon 2) :
 J'ai à partir de cette page compléter ma base de donnée pour inclure les types, et réussie à comprendre comment fusionner les tables pour les utiliser dans ma page web.
+C'est une page qui affiche la liste des pokémons avec leurs statistiques et leurs types.
 
-
+La 5ème page (Liste pokemon 3) :
+M'a permis d'implémenter dans ma base de donnée mes attaques, et de pouvoir comprendre comment donner plusieurs attributs multiples à mes pokémons.
+C'est une page qui affiche la liste des pokémons avec leurs statistiques, types et leurs attaques.
 
 
 N'hésitez pas à vous documenter sur le site laravel pour mieux comprendre ce framework ainsi que son installation :
