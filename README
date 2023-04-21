@@ -77,6 +77,10 @@ $ composer create-project laravel/laravel pokemon-app3
 Création d'une classe
 $ php artisan make:model Type
 
+Calcul de dégats simple:
+Dégâts = ((((2 * Niveau) / 5 + 2) * Puissance * Attaque / Défense) / 50) + 2
+Sachant qu'ici on considère que tous les pokemons seront au niveau 100.
+
 EXPLICATION DES PAGES 
 
 La 1er page (Le menu) :
