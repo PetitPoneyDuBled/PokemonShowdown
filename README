@@ -81,6 +81,15 @@ Calcul de dégats simple:
 Dégâts = ((((2 * Niveau) / 5 + 2) * Puissance * Attaque / Défense) / 50) + 2
 Sachant qu'ici on considère que tous les pokemons seront au niveau 100.
 
+Voici, le tableau d'explication des augmentation ou de la diminution des statistiques d'un pokémon en fonction des attaques de status ou avec (buff/debuffs)
+
+Niveau 	-6 	-5 	-4 	-3 	-2 	-1 	0  +1  +2  +3  +4  +5  +6
+Fraction 	1/4 	2/7 	1/3 	2/5 	1/2 	2/3 	1  3/2 2  5/2  3  7/2  4
+Pourcentage 	25% 	29% 	33% 	40% 	50% 	67% 	100%  150% 	200% 	250% 	300% 	350% 	400% 
+
+Voici, l'un des meilleurs moyens pour avoir accès au bug du code via laravel : 
+aller dans le projet Laravel, aller dans storage/logs et ouvrir le fichier laravel.log tous les erreurs y sont reportés comme les erreus http, js, syntaxe ...
+
 EXPLICATION DES PAGES 
 
 La 1er page (Le menu) :
@@ -105,7 +114,19 @@ La 6ème page (Liste type) :
 Affiche l'ensemble des types.
 
 La 7ème page (Liste attaque) :
-Affiche l'ensemble des attaque ainsi que leurs caractéristiques.
+Affiche l'ensemble des attaque ainsi que leurs caractéristiques. 
+
+La 8ème page (Combat 3) :
+J'ai commencé a faire mes combats de facon mieux faite, on peut choisir l'attaque a utilisé, il y a l'utilisation du calculateur de dégâts de la partie recherche.
+Sachant que les attaques de statuts ne fonctionne pas et infliges des dégâts dû au calculateur de dégâts.
+
+La 9ème page (Combat 4) :
+C'est une page avec beaucoup d'améliorations mais pas très visible, les attaques de statuts sont maintenant disponibles (rugissement par exemple) 
+il est donc maintenant possible de modifier les statistiques d'un pokémon en combat de facon dynamique en suivant la tableau d'amélioration/diminution
+des statistiques d'un pokémon au cours d'un combat (partie recherche), il y a donc aussi eu pas mal de modifications sur la base de donnée;
+Il y a eu aussi l'implémentation de pas mal de nouveaux concepts dans la base de donnée qui sera mieux utilisés dans les combats d'après 
+(coups critiques, effet de statut)
+
 
 
 N'hésitez pas à vous documenter sur le site laravel pour mieux comprendre ce framework ainsi que son installation :
