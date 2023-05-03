@@ -133,7 +133,7 @@ Sachant que les attaques de statuts ne fonctionne pas et infliges des dégâts d
 
 La 9ème page (Combat 4) :
 C'est une page avec beaucoup d'améliorations mais pas très visible, les attaques de statuts sont maintenant disponibles (rugissement par exemple) 
-il est donc maintenant possible de modifier les statistiques d'un pokémon en combat de facon dynamique en suivant la tableau d'amélioration/diminution
+il est donc maintenant possible de modifier les statistiques d'un pokémon en combat de facon dynamique en suivant le tableau d'amélioration/diminution
 des statistiques d'un pokémon au cours d'un combat (partie recherche), il y a donc aussi eu pas mal de modifications sur la base de donnée;
 Il y a eu aussi l'implémentation de pas mal de nouveaux concepts dans la base de donnée qui sera mieux utilisés dans les combats d'après 
 (coups critiques, effet de statut, probabilité effet...)
