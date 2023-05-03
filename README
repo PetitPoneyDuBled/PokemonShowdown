@@ -138,7 +138,11 @@ des statistiques d'un pokémon au cours d'un combat (partie recherche), il y a d
 Il y a eu aussi l'implémentation de pas mal de nouveaux concepts dans la base de donnée qui sera mieux utilisés dans les combats d'après 
 (coups critiques, effet de statut, probabilité effet...)
 
-
+Plan prochaine semaine :
+-1 semaine pour finaliser au complet le système de combat vraiment (faiblesses, status, gestions des 4 attaques, gestions de l'atq/atqspe def/defspe,
+faire un systeme de switch de pokémon avoir une équipe(donc probablement une nouvelle classe))
+-1 semaine pour le côté graphique du site web ainsi que l'amélioration de la base de données
+-Mettre mon site sur un server en ligne et peut-être voir un peu l'aspect sécurité du site
 
 N'hésitez pas à vous documenter sur le site laravel pour mieux comprendre ce framework ainsi que son installation :
 https://laravel.com/docs/10.x
