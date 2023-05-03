@@ -90,6 +90,17 @@ Pourcentage 	25% 	29% 	33% 	40% 	50% 	67% 	100%  150% 	200% 	250% 	300% 	350% 	4
 Voici, l'un des meilleurs moyens pour avoir accès au bug du code via laravel : 
 aller dans le projet Laravel, aller dans storage/logs et ouvrir le fichier laravel.log tous les erreurs y sont reportés comme les erreus http, js, syntaxe ...
 
+Voici, la matrice des efficacité des types qui me servira à faire les faiblesses dans les combats:
+$type_chart = [
+type_chart = [
+    [1, 1, 1, 1, 1, 1, 1, 0.5, 0, 1, 1, 1, 1, 1, 1, 1, 1],  # ACIER: [NORMAL, COMBAT, VOL, POISON, SOL, ROCHE, INSECTE, SPECTRE, ACIER, FEU, EAU, HERBE, ELECTRIQUE, PSY, GLACE, DRAGON, TÉNÈBRES]
+
+Commandes pour bien mettre à jour les caches,les routes...
+$ php artisan route:clear
+$ php artisan view:clear
+$ php artisan optimize:clear
+$ php artisan config:cache
+
 EXPLICATION DES PAGES 
 
 La 1er page (Le menu) :
@@ -125,7 +136,7 @@ C'est une page avec beaucoup d'améliorations mais pas très visible, les attaqu
 il est donc maintenant possible de modifier les statistiques d'un pokémon en combat de facon dynamique en suivant la tableau d'amélioration/diminution
 des statistiques d'un pokémon au cours d'un combat (partie recherche), il y a donc aussi eu pas mal de modifications sur la base de donnée;
 Il y a eu aussi l'implémentation de pas mal de nouveaux concepts dans la base de donnée qui sera mieux utilisés dans les combats d'après 
-(coups critiques, effet de statut)
+(coups critiques, effet de statut, probabilité effet...)
 
 
 
