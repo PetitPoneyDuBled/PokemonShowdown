@@ -133,13 +133,17 @@ Sachant que les attaques de statuts ne fonctionne pas et infliges des dégâts d
 
 La 9ème page (Combat 4) :
 C'est une page avec beaucoup d'améliorations mais pas très visible, les attaques de statuts sur les ennemies (seulement) sont maintenant disponibles (rugissement par exemple) 
-il est donc maintenant possible de modifier les statistiques du pokémon ennemie en combat de facon dynamique (grâce au principe de session qui permet d'initialiser les stats des pokemons au début et de les reinitialiser a la fin) en suivant le tableau d'amélioration/diminution
-des statistiques d'un pokémon au cours d'un combat (partie recherche), il y a donc aussi eu pas mal de modifications sur la base de donnée;
+il est donc maintenant possible de modifier les statistiques du pokémon ennemie en combat de facon dynamique (grâce au principe de session qui permet d'initialiser les stats des pokemons au début et de les reinitialiser a la fin) 
+en suivant le tableau d'amélioration/diminution des statistiques d'un pokémon au cours d'un combat (partie recherche), il y a donc aussi eu pas mal de modifications sur la base de donnée;
+Il y a maintenant aussi la différenciation entre attaque spéciale et attaque physique qui utilise de façon respective (attaque, attaquespéciale) du pokémon pour infliger des dégâts et qui est résiter 
+de facon respective par la (défense, défensespéciale du pokémon adverse)
 Il y a eu aussi l'implémentation de pas mal de nouveaux concepts dans la base de donnée qui sera mieux utilisés dans les combats d'après 
 (coups critiques, effet de statut, probabilité effet...)
 
+La 10ème page (Combat 5) :
+
 Plan prochaine semaine :
--1 semaine pour finaliser au complet le système de combat vraiment (faiblesses, status, gestions des 4 attaques, gestions de l'atq/atqspe def/defspe,
+-1 semaine pour finaliser au complet le système de combat vraiment (faiblesses, status, gestions des 4 attaques
 faire un systeme de switch de pokémon avoir une équipe(donc probablement une nouvelle classe)) / 
 -1 semaine pour le côté graphique du site web ainsi que l'amélioration de la base de données
 -Mettre mon site sur un server en ligne et peut-être voir un peu l'aspect sécurité du site
