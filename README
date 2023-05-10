@@ -132,8 +132,8 @@ J'ai commencé a faire mes combats de facon mieux faite, on peut choisir l'attaq
 Sachant que les attaques de statuts ne fonctionne pas et infliges des dégâts dû au calculateur de dégâts.
 
 La 9ème page (Combat 4) :
-C'est une page avec beaucoup d'améliorations mais pas très visible, les attaques de statuts sur les ennemies (seulement) sont maintenant disponibles (rugissement par exemple) 
-il est donc maintenant possible de modifier les statistiques du pokémon ennemie en combat de facon dynamique (grâce au principe de session qui permet d'initialiser les stats des pokemons au début et de les reinitialiser a la fin) 
+C'est une page avec beaucoup d'améliorations mais pas très visible, les attaques de statuts sur les ennemies ainsi que les alliés sont maintenant disponibles (rugissement par exemple) 
+il est donc maintenant possible de modifier les statistiques du pokémon ennemie et allie en combat de facon dynamique (grâce au principe de session qui permet d'initialiser les stats des pokemons au début et de les reinitialiser a la fin) 
 en suivant le tableau d'amélioration/diminution des statistiques d'un pokémon au cours d'un combat (partie recherche), il y a donc aussi eu pas mal de modifications sur la base de donnée;
 Il y a maintenant aussi la différenciation entre attaque spéciale et attaque physique qui utilise de façon respective (attaque, attaquespéciale) du pokémon pour infliger des dégâts et qui est résiter 
 de facon respective par la (défense, défensespéciale du pokémon adverse)
