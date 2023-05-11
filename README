@@ -140,7 +140,10 @@ de facon respective par la (défense, défensespéciale du pokémon adverse)
 Il y a eu aussi l'implémentation de pas mal de nouveaux concepts dans la base de donnée qui sera mieux utilisés dans les combats d'après 
 (coups critiques, effet de statut, probabilité effet...)
 
-La 10ème page (Combat 5) :
+Je viens de rajouter la base de donnée, de la gestion de types 11/05
+Les attaques sont bien influencés par les types.
+
+
 
 Plan prochaine semaine :
 -1 semaine pour finaliser au complet le système de combat vraiment (faiblesses, status, gestions des 4 attaques
