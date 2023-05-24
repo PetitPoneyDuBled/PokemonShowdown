@@ -144,6 +144,31 @@ Les messages d'efficacité sont affiché sur la page lorsque c'est super efficac
 Ajout du stab , ainsi que son affichage 12/05
 Ajout du coup critique 12/05
 
+Gestion des 4 attaques validé
+Alors j'ai compris comment fonctionne github, vraiment pour partager son code mais aussi intérager avec lui a distance (clé api, git clone ...)
+J'ai égalment compris comment transférer un projet laravel sur un github à l'aide de git
+initialiser un dépot git dans le projet : git init
+ajouter tous les nouveau fichiers 
+J'ai compris comment fonctionne laravel forge bien qu'il m'ait été inutile comme j'ai fait mon projet sous docker et je ne l'ai compris que très tard
+J'ai compris que c'était un hébergeur, hetzner cloud, comment fonctionne les tarifs, ce qui est demandé , ce que propose le service. 
+Une fois que j'ai compris tout ca , j'ai donc du intéragir avec serveur.
+J'ai réapris a me connecter a un serveur a distance via ssh (en générant une clé sur mon pc : ssh-keygen -t rsa, puis l'afficher pour la copier :
+cat ~/.ssh/id_rsa.pub)
+,j'ai ensuite du implémenter tout ce qui était nécessaire a mon projet, docker, php,
+mariadb, composer ... a distance et enfin le faire tourner ... 
+Une fois implémenter j'ai du comprendre comment implémenter ma base de donnée en distanciel , enfaite il faut l'inclure diretement dans le projet 
+docker cp database/pokemon_db.sql pokemon-app3_mariadb_1:/pokemon_db.sql
+et le mettre dans la database mariadb via la commande.
+et j'ai du rerentrer dans le shell du conteneur docker : docker exec -it pokemon-app3_mariadb_1 bash
+et importer fichier . sql dans mysql : mysql -u sail -p password pokemon_db < /pokemon_db.sql
+Une fois ca, j'ai du comprendre ou est situé mon site-web, car je n'ai pas de nom de domaine pour l'instant, j'ai donc du comprendre que 
+c'est grâce à l'adresse ip du serveur, que je peux me connecter a mon site web, mais également comme je l'ai fais sous docker, il va tourner 
+sur l'un des ports de celui-ci donc que je dois rajouter a l'adresse ip 
+
+
+Questoin: j'arrive a le faire tourner en me connectant a mon serveur via ssh, mais lorsque je vais éteindre mon pc, le terminal va donc s'arreter
+et donc mon code également. je ne vois aps trop comment faire.
+
 
 Plan prochaine semaine :
 -1 semaine pour finaliser au complet le système de combat vraiment (status, gestions des 4 attaques, coup critique
