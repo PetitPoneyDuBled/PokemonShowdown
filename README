@@ -196,6 +196,24 @@ Une fois que vous avez fait ces modifications, n'oubliez pas de redémarrer le s
 
 C'était bien l'adresse ip a mettre
 
+composer require pusher/pusher-php-server
+
+BROADCAST_DRIVER=pusher
+PUSHER_APP_ID=livepost
+PUSHER_APP_KEY=livepost
+PUSHER_APP_SECRET=livepost_secret
+
+php artisan websockets:serve
+Starting the WebSocket server on port 6001...
+http://localhost:8080/laravel-websockets
+
+Il y a 3 types de channels : public / presence / private
+public :
+tout le monde
+presence :
+auth requise et les utilisateurs se connaissent entre ex
+private
+auth requise et les utilisateurs ne se connaissent pas entre eux
 N'hésitez pas à vous documenter sur le site laravel pour mieux comprendre ce framework ainsi que son installation :
 https://laravel.com/docs/10.x
 
