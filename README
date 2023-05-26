@@ -177,6 +177,7 @@ et donc mon code également. je ne vois aps trop comment faire.
 Pub Sub or RPC, moi j'utiliserai le RPC car c'est plus utile malgré que ca ressemble beaucoup a une requete HTTP.
 
 Il y a un screen plus vidéo du ws
+J'ai utilisé ca car laravel-websockets est gratuit, peut utiliser du php pour la transmission d'informations
 composer require beyondcode/laravel-websockets
 
 Plan prochaine semaine :
