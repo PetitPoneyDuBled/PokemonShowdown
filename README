@@ -179,12 +179,22 @@ Pub Sub or RPC, moi j'utiliserai le RPC car c'est plus utile malgré que ca ress
 Il y a un screen plus vidéo du ws
 J'ai utilisé ca car laravel-websockets est gratuit, peut utiliser du php pour la transmission d'informations
 composer require beyondcode/laravel-websockets
+Publish sa configuration :
+php artisan vendor:publish
 
-Plan prochaine semaine :
--1 semaine pour finaliser au complet le système de combat vraiment (status, gestions des 4 attaques, coup critique
-faire un systeme de switch de pokémon avoir une équipe(donc probablement une nouvelle classe)) / 
--1 semaine pour le côté graphique du site web ainsi que l'amélioration de la base de données
--Mettre mon site sur un server en ligne et peut-être voir un peu l'aspect sécurité du site
+Oui, l'erreur semble provenir de votre fichier .env.
+
+Dans votre fichier .env, DB_HOST est défini comme mariadb, ce qui indique à Laravel de chercher un serveur de base de données à cette adresse. Cependant, mariadb n'est probablement pas une adresse valide dans votre réseau.
+
+Si votre base de données MySQL (ou MariaDB) est hébergée sur le même serveur que votre application Laravel, vous devez modifier DB_HOST pour qu'il soit localhost ou 127.0.0.1.
+
+Si votre base de données est sur un serveur différent, DB_HOST doit être l'adresse IP ou le nom d'hôte du serveur de base de données.
+
+Assurez-vous également que DB_PORT est correct. Le port par défaut pour MySQL et MariaDB est 3306, mais si votre serveur de base de données est configuré pour utiliser un port différent, vous devrez le modifier en conséquence.
+
+Une fois que vous avez fait ces modifications, n'oubliez pas de redémarrer le serveur Laravel pour qu'il prenne en compte les nouvelles valeurs de configuration. Vous pouvez le faire en exécutant php artisan config:clear pour effacer le cache de configuration et php artisan config:cache pour regénérer le cache avec les nouvelles valeurs.
+
+C'était bien l'adresse ip a mettre
 
 N'hésitez pas à vous documenter sur le site laravel pour mieux comprendre ce framework ainsi que son installation :
 https://laravel.com/docs/10.x
