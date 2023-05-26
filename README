@@ -166,9 +166,18 @@ c'est grâce à l'adresse ip du serveur, que je peux me connecter a mon site web
 sur l'un des ports de celui-ci donc que je dois rajouter a l'adresse ip 
 
 
+composer require pusher/pusher-php-server
+
+Laravel Echo est une bibliothèque JavaScript qui facilite l'abonnement aux canaux et l'écoute des événements de diffusion dans Laravel. Vous pouvez l'installer via npm :
+npm install --save laravel-echo pusher-js
+
 Questoin: j'arrive a le faire tourner en me connectant a mon serveur via ssh, mais lorsque je vais éteindre mon pc, le terminal va donc s'arreter
 et donc mon code également. je ne vois aps trop comment faire.
 
+Pub Sub or RPC, moi j'utiliserai le RPC car c'est plus utile malgré que ca ressemble beaucoup a une requete HTTP.
+
+Il y a un screen plus vidéo du ws
+composer require beyondcode/laravel-websockets
 
 Plan prochaine semaine :
 -1 semaine pour finaliser au complet le système de combat vraiment (status, gestions des 4 attaques, coup critique
